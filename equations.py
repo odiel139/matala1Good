@@ -25,21 +25,19 @@ def exponent(x):
 
 
     
-def muchlat(a):
-    if a<0:
-        a=-a
-    return a    
-    
-
-def Ln(x):
+def ln(x):
     if x<=0.0:
         return 0.0
     else:   
         Yn=x-1.0
         Yn1=Yn+2*((x-exponent(Yn))/(x+exponent(Yn)))
-        while muchlat(Yn-Yn1)>0.001:
+        num=0
+        while Yn!=Yn1:
+            num=num+1
             Yn=Yn1
             Yn1=Yn+2*((x-exponent(Yn))/(x+exponent(Yn)))
+            if num==1000:
+                return float(Yn1)
         return float(Yn1)
 
     
