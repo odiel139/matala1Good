@@ -31,7 +31,7 @@ def muchlat(a):
     return a    
     
 
-def ln(x):
+def Ln(x):
     if x<=0.0:
         return 0.0
     else:   
@@ -67,3 +67,4 @@ def calculate(x):
         resulte=num1*num2*num3*num4
         resulte=float('%0.6f' % resulte)
         return resulte
+    
