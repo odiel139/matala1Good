@@ -25,7 +25,7 @@ def exponent(x):
 
 
     
-def ln(x):
+def Ln(x):
     if x<=0.0:
         return 0.0
     else:   
@@ -45,7 +45,7 @@ def XtimesY (x,y):
     if x<=0.0:
         return 0.0
     else:
-        return float(exponent(y*ln(x)))
+        return float(exponent(y*Ln(x)))
 
 
 def sqrt(x,y):
